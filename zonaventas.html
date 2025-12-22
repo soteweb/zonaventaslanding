@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zonaventas – POS Online & Registro de Tiendas</title>
+
+  <!-- TAILWIND CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- LUCIDE ICONS -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- COLORS -->
+  <style>
+    :root {
+      --primary: #eb5757;
+      --dark: #1f2937;
+      --light: #f9fafb;
+    }
+  </style>
+</head>
+
+<body class="bg-white text-gray-700 font-sans">
+
+  <!-- HEADER -->
+  <header class="w-full bg-white border-b border-gray-200 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+
+      <a href="#" class="flex items-center gap-2">
+        <img src="logo-zc.webp" class="h-10" alt="Zonaventas Logo">
+      </a>
+
+      <nav class="hidden md:flex gap-8 text-sm font-semibold">
+        <a href="#quees" class="hover:text-[var(--primary)]">¿Qué es?</a>
+        <a href="#pos" class="hover:text-[var(--primary)]">POS</a>
+        <a href="#beneficios" class="hover:text-[var(--primary)]">Beneficios</a>
+        <a href="#precios" class="hover:text-[var(--primary)]">Precios</a>
+        <a href="#escritorio" class="hover:text-[var(--primary)]">Instalación APP</a>
+      </nav>
+
+      <a href="login.html"
+        class="px-6 py-2 bg-[var(--primary)] hover:bg-red-600 text-white rounded-xl font-semibold shadow">
+        Iniciar sesión
+      </a>
+
+    </div>
+  </header>
+
+
+
+  <!-- HERO -->
+  <section class="w-full bg-[var(--dark)] overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 py-28 grid lg:grid-cols-2 gap-10">
+
+      <div class="flex flex-col justify-center">
+        <h1 class="text-5xl font-black text-white leading-tight">
+          Tu tienda digital + POS funcionando hoy mismo
+        </h1>
+
+        <p class="mt-6 text-lg text-gray-200 leading-relaxed">
+          Registra tu tienda, activa el POS y comienza a vender con control total. Puedes usarlo desde la web o
+          instalarlo como aplicación en tu computadora o teléfono para trabajar incluso sin conexión a internet.
+        </p>
+
+        <div class="flex mt-8 gap-4 flex-wrap">
+          <a href="login.html"
+            class="px-8 py-4 bg-[var(--primary)] text-white rounded-xl font-bold shadow hover:bg-red-600">
+            Quiero ser parte
+          </a>
+
+          <a href="https://wa.me/59500000000" target="_blank"
+            class="px-8 py-4 bg-white text-[var(--dark)] rounded-xl font-bold shadow hover:bg-gray-200">
+            Consultar por WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <div class="flex items-center justify-center relative">
+        <div class="absolute inset-0 bg-[var(--primary)] blur-[100px] opacity-10"></div>
+        <img src="zvhome1.jpg"
+          class="rounded-2xl shadow-2xl w-full max-w-xl relative z-10 hover:scale-105 transition-transform duration-500"
+          alt="Sistema Zonaventas en PC">
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <!-- ¿QUÉ ES? -->
+  <section id="quees" class="py-28 bg-white">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+
+      <h2 class="text-4xl font-black text-gray-900">
+        ¿Qué es Zonaventas?
+      </h2>
+
+      <p class="mt-6 text-lg text-gray-600 max-w-3xl mx-auto">
+        Zonaventas es una solución completa para negocios que desean vender profesionalmente mediante un POS moderno, en
+        la nube y disponible también como aplicación instalable. Funciona en celular, tablet, computadora y modo
+        offline.
+      </p>
+
+    </div>
+  </section>
+
+
+
+  <!-- POS -->
+  <section id="pos" class="py-28 bg-[var(--light)] border-t border-gray-200 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6">
+
+      <h2 class="text-4xl font-black text-gray-900 text-center mb-16">
+        Punto de Venta incluido
+      </h2>
+
+      <div class="grid lg:grid-cols-2 gap-16">
+
+        <div class="space-y-6">
+
+          <div class="flex items-start gap-4">
+            <div
+              class="h-12 w-12 bg-[var(--primary)]/10 text-[var(--primary)] rounded-xl flex items-center justify-center font-black text-xl">
+              ✔</div>
+            <p class="text-lg font-semibold text-gray-800">Registro ilimitado de productos</p>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <div
+              class="h-12 w-12 bg-[var(--primary)]/10 text-[var(--primary)] rounded-xl flex items-center justify-center font-black text-xl">
+              ✔</div>
+            <p class="text-lg font-semibold text-gray-800">Inventario en tiempo real</p>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <div
+              class="h-12 w-12 bg-[var(--primary)]/10 text-[var(--primary)] rounded-xl flex items-center justify-center font-black text-xl">
+              ✔</div>
+            <p class="text-lg font-semibold text-gray-800">Reportes automáticos</p>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <div
+              class="h-12 w-12 bg-[var(--primary)]/10 text-[var(--primary)] rounded-xl flex items-center justify-center font-black text-xl">
+              ✔</div>
+            <p class="text-lg font-semibold text-gray-800">Caja, historial y usuarios</p>
+          </div>
+
+        </div>
+
+        <div class="flex justify-center items-center">
+          <img src="zvhome2.jpg" alt="Dashboard Administrativo"
+            class="w-full max-w-2xl rounded-2xl shadow-2xl hover:scale-105 transition-transform duration-500">
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <!-- PRECIOS -->
+  <section id="precios" class="py-28 bg-[var(--light)] border-t border-gray-200">
+    <div class="max-w-7xl mx-auto px-6">
+
+      <h2 class="text-4xl font-black text-gray-900 text-center mb-20">
+        Planes y Precios
+      </h2>
+
+      <div class="grid md:grid-cols-2 gap-10 max-w-4xl mx-auto">
+
+        <!-- PLAN EMPRENDEDOR -->
+        <div class="bg-white shadow-2xl rounded-2xl p-10 border-4 border-[var(--primary)] text-center">
+          <h3 class="text-2xl font-bold text-gray-900 mb-4">Emprendedor</h3>
+          <p class="text-gray-600 mb-6">Recomendado para tiendas activas con ventas diarias.</p>
+          <div class="text-4xl font-black mb-6">Gs. 89.000<span class="text-lg">/mes</span></div>
+          <ul class="space-y-3 text-gray-600 mb-8 text-left inline-block">
+            <li>✔ Hasta 300 productos</li>
+            <li>✔ POS + App Instalación</li>
+            <li>✔ Control inventario</li>
+            <li>✔ 1 usuario</li>
+          </ul>
+          <a href="login.html"
+            class="block px-6 py-3 bg-[var(--primary)] text-white rounded-xl font-semibold hover:bg-red-600">
+            Elegir este plan
+          </a>
+        </div>
+
+        <!-- PLAN EMPRESARIAL -->
+        <div class="bg-white shadow-xl rounded-2xl p-10 border border-gray-100 text-center">
+          <h3 class="text-2xl font-bold text-gray-900 mb-4">Empresarial</h3>
+          <p class="text-gray-600 mb-6">Para empresas con múltiples vendedores y mayoristas.</p>
+          <div class="text-4xl font-black mb-6">Gs. 149.000<span class="text-lg">/mes</span></div>
+          <ul class="space-y-3 text-gray-600 mb-8 text-left inline-block">
+            <li>✔ Productos ilimitados</li>
+            <li>✔ 3 usuarios</li>
+            <li>✔ Estadísticas avanzadas</li>
+            <li>✔ Soporte prioritario</li>
+          </ul>
+          <a href="login.html"
+            class="block px-6 py-3 bg-[var(--primary)] text-white rounded-xl font-semibold hover:bg-red-600">
+            Contratar
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <!-- INSTALACIÓN APP (PWA) -->
+  <section id="escritorio" class="py-28 bg-white border-t border-gray-200">
+    <div class="max-w-7xl mx-auto px-6">
+
+      <h2 class="text-4xl font-black text-gray-900 text-center mb-12">
+        Instala Zonaventas como aplicación
+      </h2>
+
+      <div class="max-w-4xl mx-auto text-center">
+
+        <img src="zvhome3.jpg" class="rounded-xl shadow-xl mx-auto mb-12 w-full max-w-2xl" alt="Instalar APP">
+
+        <p class="text-lg text-gray-700 leading-relaxed mb-10">
+          Cuando ingresas a Zonaventas verás una opción en la parte inferior derecha que dice <strong>“Instalar
+            aplicación”</strong>.
+          Con un clic puedes instalar Zonaventas en tu computadora o teléfono como si fuera una app.
+        </p>
+
+        <ul class="text-lg text-gray-700 leading-relaxed space-y-3 text-left max-w-xl mx-auto">
+          <li>✔ Acceso más rápido</li>
+          <li>✔ Funciona sin conexión a internet</li>
+          <li>✔ Sincronización automática</li>
+          <li>✔ Experiencia tipo app real</li>
+        </ul>
+
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <!-- BENEFICIOS -->
+  <section id="beneficios" class="py-28 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+
+      <h2 class="text-4xl font-black text-gray-900 text-center mb-20">
+        Beneficios para tu negocio
+      </h2>
+
+      <div class="grid md:grid-cols-3 gap-12">
+
+        <div
+          class="bg-white shadow-xl rounded-2xl p-10 text-center border border-gray-100 hover:shadow-2xl transition-shadow group">
+          <div
+            class="h-16 w-16 bg-red-100 text-[var(--primary)] rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
+            <i data-lucide="zap" class="w-8 h-8"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-4 text-gray-900">Vende más rápido</h3>
+          <p class="text-gray-600">Gestión ágil de ventas con un POS optimizado para velocidad.</p>
+        </div>
+
+        <div
+          class="bg-white shadow-xl rounded-2xl p-10 text-center border border-gray-100 hover:shadow-2xl transition-shadow group">
+          <div
+            class="h-16 w-16 bg-blue-100 text-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
+            <i data-lucide="bar-chart-3" class="w-8 h-8"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-4 text-gray-900">Control total</h3>
+          <p class="text-gray-600">Inventario, reportes detallados y caja centralizada en un solo lugar.</p>
+        </div>
+
+        <div
+          class="bg-white shadow-xl rounded-2xl p-10 text-center border border-gray-100 hover:shadow-2xl transition-shadow group">
+          <div
+            class="h-16 w-16 bg-green-100 text-green-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
+            <i data-lucide="wifi-off" class="w-8 h-8"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-4 text-gray-900">Modo offline</h3>
+          <p class="text-gray-600">Sigue registrando tus ventas incluso si te quedas sin conexión.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <!-- CTA FINAL -->
+  <section class="py-28 bg-[var(--dark)] text-white">
+    <div class="max-w-4xl mx-auto text-center px-6">
+
+      <h2 class="text-4xl font-black mb-6">
+        Registra tu tienda y usa el POS hoy mismo
+      </h2>
+
+      <p class="text-lg text-gray-200 mb-10">
+        Instala Zonaventas como aplicación, usa el POS y gestiona tu negocio con control total.
+      </p>
+
+      <a href="login.html" class="px-10 py-5 bg-[var(--primary)] rounded-xl font-bold shadow-xl hover:bg-red-600">
+        Quiero ser parte
+      </a>
+
+    </div>
+  </section>
+
+
+
+  <!-- FOOTER -->
+  <footer class="bg-black text-gray-300">
+    <div class="max-w-7xl mx-auto px-6 py-12 flex flex-col md:flex-row justify-between items-center">
+
+      <p class="text-sm">© 2025 Zonaventas – ZonaCompras</p>
+
+      <a href="login.html" class="font-semibold hover:text-white">
+        Iniciar sesión
+      </a>
+
+    </div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+
+</html>
